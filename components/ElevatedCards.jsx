@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
     },
 
     container: {
-       padding: 10,
-       color: 'white'
+        marginHorizontal: 5,
+        paddingBottom: 8,
     },
     card: {
         flex: 1,
@@ -53,12 +53,13 @@ const styles = StyleSheet.create({
         height: 100,
         width: 100,
         borderRadius: 10,
-        margin: 15,
+        margin: 8,
+        marginBottom: 10,
     
     },
     cardElevated: {
-        backgroundColor: 'purple',
-        // elevation: 40
+        backgroundColor: '#8B78E6',
+        // elevation: 1
     },
     text: {
         color: 'white',

@@ -37,11 +37,7 @@ const styles = StyleSheet.create({
     },
     container: {
       flex: 1,
-      flexDirection: 'row',
-      paddingHorizontal: 5,
-      
-        
-       
+      flexDirection: 'row',  
     },
     card: {
         flex: 1,
@@ -50,7 +46,7 @@ const styles = StyleSheet.create({
         height: 100,
         width: 100,
         borderRadius: 15,
-        margin: 10,
+        margin: 8,
     },
     cardOne: {
         backgroundColor: 'red'
