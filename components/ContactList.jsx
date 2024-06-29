@@ -42,7 +42,8 @@ const ContactList = () => {
       <Text style ={styles.headingText}>Contact List</Text>
       <ScrollView 
       style = {styles.container}
-      scrollEnabled={false}
+     scrollEnabled={true}
+     
       >
         {contacts.map( ({uid, name, status, imageURL }) => (
             <View key={uid} style = {styles.userCard}>
@@ -73,9 +74,11 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     container: {
+        flex: 1,
         paddingHorizontal: 16,
         paddingTop: 10,
         paddingBottom: 10,
+        
         
     },
     userCard: {
@@ -94,9 +97,6 @@ const styles = StyleSheet.create({
         // borderWidth: 5,
         borderRadius: 60 / 2,
         marginRight: 15,
-    },
-    nameAndStatus: {
-        backgroundColor: 'red',
     },
     userName: {
         color: 'white',
