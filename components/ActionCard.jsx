@@ -3,7 +3,7 @@ import React from 'react'
 
 const ActionCard = () => {
 
-  function openWebsite(websiteLink: string) {
+  function openWebsite(websiteLink) {
     Linking.openURL(websiteLink);
   }
 
@@ -32,13 +32,13 @@ const ActionCard = () => {
           </View>
 
           <View style = { styles.footerContainer}>
-            <TouchableOpacity
-            onPress={ () => openWebsite('https://www.tripspoint.com/attraction/swayambhunath')}
-            >
-              <Text>Read more...</Text>
-            </TouchableOpacity>
-          </View>
-
+           
+              <TouchableOpacity
+                onPress={ () => openWebsite('https://www.tripspoint.com/attraction/swayambhunath')}
+              >
+                <Text>Read more...</Text>
+              </TouchableOpacity>
+            </View>
       </View>
     </View>
   )
@@ -48,30 +48,52 @@ export default ActionCard
 
 const styles = StyleSheet.create({
   headingText: {
-    padding: 20,
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
+    padding: 20,
+},
+  card: {
+    width: 392,
+    height: 420,
+    borderRadius: 7,
+    marginVertical: 12,
+    marginHorizontal: 10,
   },
-  card: {},
   elevatedCard: {
-    
+    backgroundColor: 'white',
+    elevation: 4,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: 'black',
+    shadowOpacity: 0.3,
+
   },
   headingContainer: {
-  
+  height: 40,
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+
   },
   headerText: {
-    fontSize: 20,
-    padding: 10,
+    fontSize: 18,
+    fontWeight: '400',
   },
   cardImage: {
     height: 250,
+    
   },
-  bodyContainer: {},
+  bodyContainer: {
+    padding: 8,
+  },
   bodyText: {
     textAlign: 'justify',
-    padding: 10,
+    marginTop: 10,
+   
   },
   footerContainer: {
-    padding: 10,
+    padding: 8,
   },
 })
